@@ -1,29 +1,30 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC
 "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
-"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.it.bean">
 	<!-- 配置类名对应的表名 -->
 	<class name="User" table="t_user">
-	
-	<!-- 配置主属性对应的主键 -->
-	<id name="user_id"  column="user_id">
-	
-	<!-- 主键形成的方式（assigned：程序员指定） -->
-		<generator class="native"/>
-	</id>
-	
-	<!-- 配置其他属性 -->
-	<property name="user_code" type="string" column="user_code"/>
-	<property name="user_name" type="string" column="user_name"/>
-	<property name="user_password" type="string" column="user_password"/>
-	<property name="user_state" type="string" column="user_state"/>
-	
-	<!-- 表示多条拜访记录 -->
-	<set name="setUser">
-		<key column="uvid"></key>
-		<one-to-many class="com.it.bean.Visit"/>
-	</set>
-	
+
+		<!-- 配置主属性对应的主键 -->
+		<id name="user_id" column="user_id">
+
+			<!-- 主键形成的方式（assigned：程序员指定） -->
+			<generator class="native" />
+		</id>
+
+		<!-- 配置其他属性 -->
+		<property name="user_code" type="string" column="user_code" />
+		<property name="user_name" type="string" column="user_name" />
+		<property name="user_password" type="string"
+			column="user_password" />
+		<property name="user_state" type="string" column="user_state" />
+
+		<!-- 表示多条拜访记录 -->
+		<set name="setUser">
+			<key column="uvid"></key>
+			<one-to-many class="com.it.bean.Visit" />
+		</set>
+
 	</class>
 </hibernate-mapping>

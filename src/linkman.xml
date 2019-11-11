@@ -12,19 +12,20 @@
 	http://www.springframework.org/schema/aop/spring-aop.xsd
 	http://www.springframework.org/schema/tx
 	http://www.springframework.org/schema/tx/spring-tx.xsd">
-	
-	<bean id="linkManAction" class="com.it.action.LinkManAction" scope="prototype">
-	
+
+	<bean id="linkManAction" class="com.it.action.LinkManAction"
+		scope="prototype">
+
 		<property name="linkManService" ref="linkManService"></property>
 		<property name="customerService" ref="customerService"></property>
 	</bean>
-	
+
 	<bean id="linkManService" class="com.it.service.LinkManService">
 		<property name="linkManDao" ref="linkManDaoImpl"></property>
 	</bean>
-	
+
 	<bean id="linkManDaoImpl" class="com.it.dao.LinkManDaoImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
-	</bean> 
-	
-	</beans>
+	</bean>
+
+</beans>

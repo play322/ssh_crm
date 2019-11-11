@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <HTML xmlns="http://www.w3.org/1999/xhtml">
 <HEAD id=Head1>
@@ -107,8 +107,8 @@ A.active {
 			<TBODY>
 				<TR>
 					<TD width=15><IMG src="images/new_005.jpg" border=0></TD>
-					<TD align=middle width=180 background=images/new_006.jpg
-						height=35><B>人力资源 －功能菜单</B></TD>
+					<TD align=middle width=180 background=images/new_006.jpg height=35><B>人力资源
+							－功能菜单</B></TD>
 					<TD width=15><IMG src="images/new_007.jpg" border=0></TD>
 				</TR>
 			</TBODY>
@@ -129,19 +129,22 @@ A.active {
 										<TABLE id=table_1 style="DISPLAY: none" cellSpacing=0
 											cellPadding=2 width=155 align=center border=0>
 											<TBODY>
-<TR>
-	<TD class=menuSmall><A class=style2 href="${pageContext.request.contextPath }/customer_toAdd.action"
-		target=main>－ 新增客户</A></TD>
-</TR>
-<TR> 
-	<TD class=menuSmall><A class=style2 href="${pageContext.request.contextPath }/customer_queryAll.action"
-		target=main>－ 客户列表</A></TD>
-</TR>
-<TR> 
-	<TD class=menuSmall><A class=style2 href="${pageContext.request.contextPath }/customer_listPage.action?currentPage=1"
-		target=main>－ 分页列表</A></TD>
-</TR>
-												
+												<TR>
+													<TD class=menuSmall><A class=style2
+														href="${pageContext.request.contextPath }/customer_toAdd.action"
+														target=main>－ 新增客户</A></TD>
+												</TR>
+												<TR>
+													<TD class=menuSmall><A class=style2
+														href="${pageContext.request.contextPath }/customer_queryAll.action"
+														target=main>－ 客户列表</A></TD>
+												</TR>
+												<TR>
+													<TD class=menuSmall><A class=style2
+														href="${pageContext.request.contextPath }/customer_listPage.action?currentPage=1"
+														target=main>－ 分页列表</A></TD>
+												</TR>
+
 											</TBODY>
 										</TABLE>
 									</TD>
@@ -155,20 +158,22 @@ A.active {
 								</TR>
 								<TR>
 									<TD>
-<TABLE id=table_2 style="DISPLAY: none" cellSpacing=0
-	cellPadding=2 width=155 align=center border=0>
-	<TBODY>
-		<TR>
-			<TD class=menuSmall><A class=style2 href="${pageContext.request.contextPath }/linkman_toAddPage.action"
-				target=main>－ 新增联系人</A></TD>
-		</TR>
-		<TR>
-			<TD class=menuSmall><A class=style2 href="${pageContext.request.contextPath }/linkman_list.action"
-				target=main>－联系人列表</A></TD>
-		</TR>
-		
-	</TBODY>
-</TABLE>
+										<TABLE id=table_2 style="DISPLAY: none" cellSpacing=0
+											cellPadding=2 width=155 align=center border=0>
+											<TBODY>
+												<TR>
+													<TD class=menuSmall><A class=style2
+														href="${pageContext.request.contextPath }/linkman_toAddPage.action"
+														target=main>－ 新增联系人</A></TD>
+												</TR>
+												<TR>
+													<TD class=menuSmall><A class=style2
+														href="${pageContext.request.contextPath }/linkman_list.action"
+														target=main>－联系人列表</A></TD>
+												</TR>
+
+											</TBODY>
+										</TABLE>
 									</TD>
 								</TR>
 								<TR>
@@ -183,14 +188,16 @@ A.active {
 										<TABLE id=table_5 style="DISPLAY: none" cellSpacing=0
 											cellPadding=2 width=155 align=center border=0>
 											<TBODY>
-<TR>
-	<TD class=menuSmall><A class=style2 href="${pageContext.request.contextPath }/visit_toAddPage.action"
-		target=main>－新增客户拜访</A></TD>
-</TR>
-<TR>
-	<TD class=menuSmall><A class=style2 href="${pageContext.request.contextPath }/visit_list.action"
-		target=main>－客户拜访列表</A></TD>
-</TR>
+												<TR>
+													<TD class=menuSmall><A class=style2
+														href="${pageContext.request.contextPath }/visit_toAddPage.action"
+														target=main>－新增客户拜访</A></TD>
+												</TR>
+												<TR>
+													<TD class=menuSmall><A class=style2
+														href="${pageContext.request.contextPath }/visit_list.action"
+														target=main>－客户拜访列表</A></TD>
+												</TR>
 
 											</TBODY>
 										</TABLE>
@@ -207,46 +214,50 @@ A.active {
 									<TD>
 										<TABLE id=table_3 style="DISPLAY: none" cellSpacing=0
 											cellPadding=2 width=155 align=center border=0>
-<TBODY>
-	<TR>
-		<TD class=menuSmall><A class=style2 href="${pageContext.request.contextPath }/customer_toMoreCondition.action"
-			target=main>－ 客户信息查询</A></TD>
-	</TR>
-	<TR>
-		<TD class=menuSmall><A class=style2 href="${pageContext.request.contextPath }/linkman_toMoreCondition.action"
-			target=main>－ 联系人信息查询</A></TD>
-	</TR>
-	<TR>
-		<TD class=menuSmall><A class=style2 href="#"
-			target=main>－ 客户拜访记录查询</A></TD>
-	</TR>
-</TBODY>
+											<TBODY>
+												<TR>
+													<TD class=menuSmall><A class=style2
+														href="${pageContext.request.contextPath }/customer_toMoreCondition.action"
+														target=main>－ 客户信息查询</A></TD>
+												</TR>
+												<TR>
+													<TD class=menuSmall><A class=style2
+														href="${pageContext.request.contextPath }/linkman_toMoreCondition.action"
+														target=main>－ 联系人信息查询</A></TD>
+												</TR>
+												<TR>
+													<TD class=menuSmall><A class=style2 href="#"
+														target=main>－ 客户拜访记录查询</A></TD>
+												</TR>
+											</TBODY>
 										</TABLE>
 									</TD>
 								</TR>
 								<TR>
 									<TD background=images/new_027.jpg height=1></TD>
 								</TR>
-<TR>
-	<TD class=mainMenu onClick="MenuDisplay('table_4');"><SPAN
-		class=span id=table_4Span>＋</SPAN> 统计分析</TD>
-</TR>
-<TR>
-	<TD>
-		<TABLE id=table_4 style="DISPLAY: none" cellSpacing=0
-			cellPadding=2 width=155 align=center border=0>
-			<TBODY>
-				<TR>
-					<TD class=menuSmall><A class=style2 href="${pageContext.request.contextPath }/customer_countSoure.action"
-						target=main>－客户来源统计</A></TD>
-				</TR>
-				<TR>
-					<TD class=menuSmall><A class=style2 href="${pageContext.request.contextPath }/customer_countLevel.action"
-						target=main>－客户级别统计</A></TD>
-				</TR>
-				
-			</TBODY>
-		</TABLE>
+								<TR>
+									<TD class=mainMenu onClick="MenuDisplay('table_4');"><SPAN
+										class=span id=table_4Span>＋</SPAN> 统计分析</TD>
+								</TR>
+								<TR>
+									<TD>
+										<TABLE id=table_4 style="DISPLAY: none" cellSpacing=0
+											cellPadding=2 width=155 align=center border=0>
+											<TBODY>
+												<TR>
+													<TD class=menuSmall><A class=style2
+														href="${pageContext.request.contextPath }/customer_countSoure.action"
+														target=main>－客户来源统计</A></TD>
+												</TR>
+												<TR>
+													<TD class=menuSmall><A class=style2
+														href="${pageContext.request.contextPath }/customer_countLevel.action"
+														target=main>－客户级别统计</A></TD>
+												</TR>
+
+											</TBODY>
+										</TABLE>
 									</TD>
 								</TR>
 								<TR>
@@ -288,8 +299,7 @@ A.active {
 			<TBODY>
 				<TR>
 					<TD width=15><IMG src="images/new_010.jpg" border=0></TD>
-					<TD align=middle width=180 background=images/new_011.jpg
-						height=15></TD>
+					<TD align=middle width=180 background=images/new_011.jpg height=15></TD>
 					<TD width=15><IMG src="images/new_012.jpg" border=0></TD>
 				</TR>
 			</TBODY>

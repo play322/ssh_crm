@@ -1,25 +1,26 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC
 "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
-"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.it.bean">
 	<!-- 配置类名对应的表名 -->
 	<class name="LinkMan" table="t_linkman">
-	
-	<!-- 配置主属性对应的主键 -->
-	<id name="lkm_id"  column="lkm_id">
-	
-	<!-- 主键形成的方式（assigned：程序员指定） -->
-		<generator class="native"/>
-	</id>
-	
-	<!-- 配置其他属性 -->
-	<property name="lkm_name" type="string" column="lkm_name"/>
-	<property name="lkm_gender" type="string" column="lkm_gender"/>
-	<property name="lkm_phone" type="string" column="lkm_phone"/>
-	<property name="lkm_mobile" type="string" column="lkm_mobile"/>
-	<!-- 所属客户 -->
-	<many-to-one name="customer" class="com.it.bean.Customer" column="clid"></many-to-one>
-	
+
+		<!-- 配置主属性对应的主键 -->
+		<id name="lkm_id" column="lkm_id">
+
+			<!-- 主键形成的方式（assigned：程序员指定） -->
+			<generator class="native" />
+		</id>
+
+		<!-- 配置其他属性 -->
+		<property name="lkm_name" type="string" column="lkm_name" />
+		<property name="lkm_gender" type="string" column="lkm_gender" />
+		<property name="lkm_phone" type="string" column="lkm_phone" />
+		<property name="lkm_mobile" type="string" column="lkm_mobile" />
+		<!-- 所属客户 -->
+		<many-to-one name="customer" class="com.it.bean.Customer"
+			column="clid"></many-to-one>
+
 	</class>
 </hibernate-mapping>

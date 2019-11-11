@@ -2,70 +2,73 @@
 <!DOCTYPE struts PUBLIC
     "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
     "http://struts.apache.org/dtds/struts-2.3.dtd">
-    
-    <struts>
-    <!-- 文件上传大小设置，默认为2M -->
-   <!--  <constant name="struts.multipart.maxSize" value="209715200">
-    </constant> -->
-    	<package name="user" extends="struts-default" namespace="/">
-    	
-    		<action name="user_*" class="userAction" method="{1}">
-    			<result name="loginok">/index.htm</result>
-    			<result name="login">/login.jsp</result>
-    		</action>
-    		
-    		<action name="customer_*"  class="customerAction" method="{1}">
-    			<result name="toAdd">/jsp/customer/add.jsp</result>
-    			<result name="Add" type="redirectAction">customer_queryAll</result>
-    			<result name="queryAll">/jsp/customer/list.jsp</result>
-    			<result name="findById">/jsp/customer/edit.jsp</result>
-    			<result name="upd" type="redirectAction" >customer_queryAll</result>
-    			<result name="del" type="redirectAction" >customer_queryAll</result>
-    			<result name="listPage" >/jsp/customer/listpage.jsp</result>
-    			<result name="findCondition" >/jsp/customer/list.jsp</result>
-    			<!-- 到多条件查询页面 -->
-    			<result name="toMoreCondition">/jsp/select/customer.jsp</result>
-    			<!-- 多条件查询 -->
-    			<result name="moreCondition">/jsp/customer/list.jsp</result>
-    			<!-- 来源统计 -->
-    			<result name="countSoure">/jsp/customer/countSource.jsp</result>
-    			<!-- 级别统计 -->
-    			<result name="countLevel">/jsp/customer/countLevel.jsp</result>
-    		</action>
-    		
-    		<action name="linkman_*" class="linkManAction" method="{1}">
-    			<!-- 到添加页面 -->
-    			<result name="toAddPage">/jsp/linkman/add.jsp</result>
-    			<!-- 添加联系人 -->
-    			<result name="addLinkMan" type="redirectAction" >linkman_list</result>
-    			<!-- 联系人列表 -->
-    			<result name="list">/jsp/linkman/list.jsp</result>
-    			<!-- 查询单个 -->
-    			<result name="findById">/jsp/linkman/edit.jsp</result>
-    			<!-- 修改 -->
-    			<result name="update" type="redirectAction" >linkman_list</result>
-    			<!-- 删除 -->
-    			<result name="del" type="redirectAction" >linkman_list</result>
-    			<!-- 上传文件超出默认大小，报input错误配置 -->
-    			<!-- <result name="input">/jsp/error.jsp</result> -->
-    			<!-- 模糊查询 -->
-    			<result name="findCondition">/jsp/linkman/list.jsp</result>
-    			<!-- 到多条件查询页面 -->
-    			<result name="toMoreCondition">/jsp/select/linkman.jsp</result>
-    			<!-- 多条件查询 -->
-    			<result name="moreQuery">/jsp/linkman/list.jsp</result>
-    		</action> 
-    		
-    		<action name="visit_*" class="visitAction" method="{1}">
-    			<!-- 到添加页面 -->
-    			<result name="toAddPage">/jsp/visit/add.jsp</result>
-    			<!-- 添加拜访客户记录 -->
-    			<result name="addVisit">/jsp/success.jsp</result>
-    			<!-- 拜访列表 -->
-    			<result name="list">/jsp/visit/list.jsp</result>
-    		</action>
-    		
-    		
-    		
-    	</package>
-    </struts>
+
+<struts>
+	<!-- 文件上传大小设置，默认为2M -->
+	<!-- <constant name="struts.multipart.maxSize" value="209715200"> </constant> -->
+	<package name="user" extends="struts-default" namespace="/">
+
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="loginok">/index.htm</result>
+			<result name="login">/login.jsp</result>
+		</action>
+
+		<action name="customer_*" class="customerAction" method="{1}">
+			<result name="toAdd">/jsp/customer/add.jsp</result>
+			<result name="Add" type="redirectAction">customer_queryAll</result>
+			<result name="queryAll">/jsp/customer/list.jsp</result>
+			<result name="findById">/jsp/customer/edit.jsp</result>
+			<result name="upd" type="redirectAction">customer_queryAll
+			</result>
+			<result name="del" type="redirectAction">customer_queryAll
+			</result>
+			<result name="listPage">/jsp/customer/listpage.jsp</result>
+			<result name="findCondition">/jsp/customer/list.jsp</result>
+			<!-- 到多条件查询页面 -->
+			<result name="toMoreCondition">/jsp/select/customer.jsp</result>
+			<!-- 多条件查询 -->
+			<result name="moreCondition">/jsp/customer/list.jsp</result>
+			<!-- 来源统计 -->
+			<result name="countSoure">/jsp/customer/countSource.jsp</result>
+			<!-- 级别统计 -->
+			<result name="countLevel">/jsp/customer/countLevel.jsp</result>
+		</action>
+
+		<action name="linkman_*" class="linkManAction" method="{1}">
+			<!-- 到添加页面 -->
+			<result name="toAddPage">/jsp/linkman/add.jsp</result>
+			<!-- 添加联系人 -->
+			<result name="addLinkMan" type="redirectAction">linkman_list
+			</result>
+			<!-- 联系人列表 -->
+			<result name="list">/jsp/linkman/list.jsp</result>
+			<!-- 查询单个 -->
+			<result name="findById">/jsp/linkman/edit.jsp</result>
+			<!-- 修改 -->
+			<result name="update" type="redirectAction">linkman_list
+			</result>
+			<!-- 删除 -->
+			<result name="del" type="redirectAction">linkman_list</result>
+			<!-- 上传文件超出默认大小，报input错误配置 -->
+			<!-- <result name="input">/jsp/error.jsp</result> -->
+			<!-- 模糊查询 -->
+			<result name="findCondition">/jsp/linkman/list.jsp</result>
+			<!-- 到多条件查询页面 -->
+			<result name="toMoreCondition">/jsp/select/linkman.jsp</result>
+			<!-- 多条件查询 -->
+			<result name="moreQuery">/jsp/linkman/list.jsp</result>
+		</action>
+
+		<action name="visit_*" class="visitAction" method="{1}">
+			<!-- 到添加页面 -->
+			<result name="toAddPage">/jsp/visit/add.jsp</result>
+			<!-- 添加拜访客户记录 -->
+			<result name="addVisit">/jsp/success.jsp</result>
+			<!-- 拜访列表 -->
+			<result name="list">/jsp/visit/list.jsp</result>
+		</action>
+
+
+
+	</package>
+</struts>

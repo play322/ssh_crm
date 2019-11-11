@@ -12,16 +12,17 @@
 	http://www.springframework.org/schema/aop/spring-aop.xsd
 	http://www.springframework.org/schema/tx
 	http://www.springframework.org/schema/tx/spring-tx.xsd">
-	
-	<bean id="customerAction" class="com.it.action.CustomerAction" scope="prototype">
+
+	<bean id="customerAction" class="com.it.action.CustomerAction"
+		scope="prototype">
 		<property name="customerService" ref="customerService"></property>
 	</bean>
-	
+
 	<bean id="customerService" class="com.it.service.CustomerService">
 		<property name="customerDao" ref="customerDaoImpl"></property>
 	</bean>
-	
+
 	<bean id="customerDaoImpl" class="com.it.dao.CustomerDaoImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
-	</beans>
+</beans>

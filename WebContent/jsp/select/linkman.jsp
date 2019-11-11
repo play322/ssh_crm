@@ -54,9 +54,7 @@
 						<TABLE cellSpacing=0 cellPadding=5 border=0>
 							<tr>
 								<td>联系人名称：</td>
-								<td colspan="3">
-									<input type="text"  name="lkm_name" />
-								</td>
+								<td colspan="3"><input type="text" name="lkm_name" /></td>
 							</tr>
 
 							<tr>
