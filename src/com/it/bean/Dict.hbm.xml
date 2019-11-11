@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.it.bean">
+	<!-- 配置类名对应的表名 -->
+	<class name="Dict" table="t_dict">
+	
+	<!-- 配置主属性对应的主键 -->
+	<id name="dno"  column="dno">
+	
+	<!-- 主键形成的方式（assigned：程序员指定） -->
+		<generator class="increment"/>
+	</id>
+	
+	<!-- 配置其他属性 -->
+	<property name="dname" type="string" column="dname"/>
+	
+	
+	
+	</class>
+</hibernate-mapping>
